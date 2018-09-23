@@ -17,6 +17,7 @@ class List extends Component {
       					{
                           users.find(user => {
                           	// == comparator because user.id is number and profile.userID is string :_(
+                            // Alternative: return user.id == profile.userID
                          	return user.id === Number(profile.userID)
   							}).name
 						}
